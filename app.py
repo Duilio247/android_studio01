@@ -54,7 +54,7 @@ def execute_query(query, params=None, fetchone=False):
 # Ruta principal
 @app.route('/', methods=['GET'])
 def home():
-    return jsonify({"mensaje": "API con Oracle funcionando correctamente"})
+    return "mensaje API con Oracle funcionando correctamente"
 
 # Ejemplo de endpoint para obtener datos de una tabla
 @app.route('/api/usuarios', methods=['GET'])
